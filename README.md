@@ -1,6 +1,6 @@
-# Fetal Brain Structure Segmentation
+# Semantic Segmentation of Key Fetal Brain Structures in Trans-Thalamic Ultrasound Images Using Deep Learning
 
-Semantic segmentation of key fetal brain structures (CSP, LV, parenchyma) in trans-thalamic ultrasound images using deep learning with U-Net and Attention Gates.
+Deep learning-based segmentation of key fetal brain structures (CSP, LV, parenchyma) in trans-thalamic ultrasound images using U-Net with Attention Gates.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)
