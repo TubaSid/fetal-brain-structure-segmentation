@@ -7,7 +7,8 @@ Semantic segmentation of key fetal brain structures (CSP, LV, parenchyma) in tra
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 **Master's Thesis Project**  
-Data Science · Sapienza Università di Roma
+Data Science · Sapienza Università di Roma  
+📄 [Read Full Thesis](thesis/thesis.pdf) · 📊 [View Presentation](thesis/presentation.ppt)
 
 ---
 
@@ -58,6 +59,12 @@ fetal-brain-seg/
 │   ├── losses.py                 # Focal, Dice, and combined losses
 │   ├── metrics.py                # Evaluation metrics (IoU, Dice)
 │   └── postprocess.py            # Post-processing utilities
+│
+├── thesis/                       # Master's thesis documentation
+│   ├── thesis.pdf                # Full thesis document
+│   ├── thesis_latex_source.zip   # LaTeX source files
+│   ├── presentation.ppt          # Defense presentation
+│   └── README.md                 # Thesis details and citation
 │
 ├── scripts/                      # Utility scripts
 │   ├── download_dataset.ps1      # Download and extract Zenodo dataset
