@@ -1,10 +1,25 @@
-# Fetal Brain Ultrasound Segmentation
+# Fetal Brain Structure Segmentation
 
-Automated segmentation of fetal brain structures (CSP, LV, parenchyma) in trans-thalamic ultrasound images using U-Net with Attention Gates.
+Semantic segmentation of key fetal brain structures (CSP, LV, parenchyma) in trans-thalamic ultrasound images using deep learning with U-Net and Attention Gates.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
+
+**Master's Thesis Project**  
+Data Science · Sapienza Università di Roma
+
+---
+
+## About
+
+This project presents a deep learning approach for automated segmentation of fetal brain structures in trans-thalamic ultrasound images. The system identifies and segments three clinically important anatomical regions:
+
+- **Parenchyma** (brain tissue)
+- **CSP** (Cavum Septum Pellucidum) - small midline structure
+- **LV** (Lateral Ventricle) - fluid-filled chambers
+
+The model combines U-Net architecture with attention gates to improve feature extraction, particularly for small anatomical structures that are critical for prenatal diagnosis. This work addresses class imbalance through weighted sampling and multi-objective loss functions, achieving robust segmentation performance on challenging ultrasound data.
 
 ---
 
@@ -77,8 +92,8 @@ fetal-brain-seg/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/fetal-brain-seg.git
-   cd fetal-brain-seg
+   git clone https://github.com/TubaSid/fetal-brain-structure-segmentation.git
+   cd fetal-brain-structure-segmentation
    ```
 
 2. **Create virtual environment**
