@@ -1,0 +1,42 @@
+# Default training configuration
+# Override any field as needed; keys map to src.config.Config attributes.
+
+# Paths
+DATA_ROOT: ./
+IMG_DIR: data/images
+MASK_DIR: data/masks
+OUT_DIR: outputs
+
+# Model
+img_size: 512
+in_channels: 1
+n_classes: 4
+
+# Training
+batch_size: 8
+epochs: 60
+lr: 0.0003
+weight_decay: 0.00001
+num_workers: 2
+amp: true
+
+# Loss weights
+dice_weight: 0.4
+focal_weight: 0.2
+ce_weight_smoothing: 0.0
+
+# Imbalance handling
+oversample_factor: 3.0
+
+# Checkpoint metric weights
+ckpt_metric_weights:
+  0: 0.0
+  1: 1.0
+  2: 2.0
+  3: 2.0
+
+# Post-processing (not used in training loop, but informative)
+dilate_px: 10
+par_kernel: 7
+small_min_area: 15
+small_keep_k: 2
