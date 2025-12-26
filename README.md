@@ -378,7 +378,11 @@ MIT License - Feel free to use this project for research and commercial purposes
 
 ## Author
 
-**Your Name / Affiliation**
+**Tuba Siddiqui**
+
+Master's Thesis Project  
+Data Science Degree  
+Sapienza Università di Roma
 
 For questions or contributions, please open an issue or submit a pull request.
 
@@ -386,6 +390,7 @@ For questions or contributions, please open an issue or submit a pull request.
 
 ## Acknowledgments
 
+- Master's thesis research conducted at Sapienza Università di Roma
 - Dataset sourced from fetal ultrasound clinical studies
 - Implementation inspired by community-driven medical imaging projects
 - Thanks to PyTorch and the computer vision community
