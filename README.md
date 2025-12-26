@@ -44,12 +44,12 @@ fetal-brain-seg/
 │   ├── metrics.py                # Evaluation metrics (IoU, Dice)
 │   └── postprocess.py            # Post-processing utilities
 │
-├── notebooks/                    # Jupyter notebooks
-│   ├── 01_training.ipynb         # Training pipeline (extracted from original)
-│   └── 02_inference.ipynb        # Inference and evaluation
+├── scripts/                      # Utility scripts
+│   ├── download_dataset.ps1      # Download and extract Zenodo dataset
+│   └── smoke.py                  # Quick import and forward pass test
 │
 ├── configs/                      # Configuration files
-│   └── default_config.yaml       # Default hyperparameters (optional)
+│   └── default_config.yaml       # Default hyperparameters
 │
 ├── data/                         # Data directory (create symbolic link or copy)
 │   ├── images/                   # Input ultrasound images
@@ -119,7 +119,7 @@ loader = DataLoader(dataset, batch_size=cfg.batch_size, shuffle=True)
 # Model
 model = UNet(in_channels=cfg.in_channels, n_classes=cfg.n_classes).to(device)
 
-# Training loop (see notebooks/01_training.ipynb for complete example)
+# Training loop (run train.py for complete pipeline)
 ```
 
 ### Inference
@@ -246,9 +246,8 @@ Alzubaidi M.H., Agus M., Makhlouf M., Anver F., Alyafei K. Large‑scale annotat
 
 ---
 
-## Why `notebooks/` and `data/` exist
+## Why `data/` exists
 
-- `notebooks/`: Contains exploratory and reproducible analyses (training, inference, evaluation, visualization). These are for experimentation and documentation; the production codepaths live in `src/` and the CLI scripts (`train.py`, `infer.py`).
 - `data/`: A local, user‑owned staging area for images and masks used in examples and scripts. It is intentionally ignored by Git (see `.gitignore`) to avoid uploading large or sensitive datasets. You should download data from the cited source and place it here, or point the configuration to your own dataset location.
 
 ---
